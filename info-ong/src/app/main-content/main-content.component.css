@@ -1,0 +1,105 @@
+h2 {
+    color: #1E4F20;
+}
+
+.btn-main-content {
+    background-color: #1E4F20;
+    color: #E3FFE4;
+}
+
+.btn-main-content:hover {
+    background-color: #E3FFE4;
+    color: #1E4F20;
+}
+
+@media (max-width: 576px) {  
+    .main_content {
+        margin-top: 3%;
+    }
+       
+    .card-body {
+        max-width: 330px;
+        max-height: 450px;
+        overflow: hidden;
+    }
+    
+    .card {
+        border: none;
+    }
+    
+    .btn-main-content {
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        border: none;
+        transform: translateX(-30%);
+    }
+}
+
+
+@media (min-width: 576px) {  
+    .main_content {
+        margin-top: 3%;
+    }
+       
+    .card-body {
+        max-width: 330px;
+        max-height: 450px;
+        overflow: hidden;
+    }
+    
+    .card {
+        border: none;
+    }
+    
+    .btn-main-content {
+        position: absolute;
+        top: 30%;
+        border: none;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    .main_content {
+        margin-top: 3%;
+        
+    }
+
+    .card-body {
+        max-width: 330px;
+        max-height: 215px;
+        overflow: hidden;
+    }
+
+    .card {
+        border: none;
+    }
+    
+    .btn-main-content {
+        top: 30%;
+        border: none;
+    }
+    
+    
+ }
+
+@media (min-width: 992px) {
+    .card-body {
+        max-width: 330px;
+        max-height: 290px;
+        overflow: hidden;
+    }
+  }
+
+
+@media (min-width: 1200px) { 
+    .card-body {
+        max-width: 330px;
+        max-height: 400px;
+        overflow: hidden;
+    }
+ } 
+
+
+@media (min-width: 1400px) {  }

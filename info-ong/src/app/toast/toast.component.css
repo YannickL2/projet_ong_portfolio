@@ -1,0 +1,33 @@
+.toast-class {
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    right: 0rem;  
+    margin: 2rem;  
+    display: inline-flex;  
+    min-width: 260px;    
+    min-height: 70px;  
+    max-height: 70px;  
+    box-shadow: 6px 6px 12px #1E4F20;  
+  
+    color: #1E4F20;
+    background-color: #E3FFE4;
+    flex-flow: row nowrap;  
+    align-items: center;  
+    justify-content: space-between;  
+    border-left: 6px solid #1E4F20;  
+    padding: 1.5rem;  
+    border-radius: 4px;  
+    font-size: 0.9rem;
+}
+
+.toast-class > a {
+    color: #E3FFE4;
+    background-color: #1E4F20;
+}
+
+.toast-class > a:hover {
+    color: #1E4F20;
+    background-color: #E3FFE4;
+    box-shadow: 2px 1px 1px #1E4F20 ;
+}

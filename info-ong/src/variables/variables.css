@@ -1,0 +1,25 @@
+.bg-primary-color  {
+    background-color: #1E4F20;
+}
+
+.bg-secondary-color {
+    background-color: #E3FFE4;
+}
+
+.bg-primary-color-opacity-80  {
+    background-color: #1E4F20;
+    opacity: 80%;
+}
+
+.bg-primary-color-opacity-75  {
+    background-color: #1E4F20;
+    opacity: 75%;
+}
+
+.text-primary-color {
+    color: #1E4F20;
+}
+
+.text-secondary-color {
+    color: #E3FFE4;
+}

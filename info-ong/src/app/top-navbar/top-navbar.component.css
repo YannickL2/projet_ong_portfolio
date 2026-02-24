@@ -1,0 +1,140 @@
+.navBtn {
+    padding: 1%;
+    width: 100%;
+    align-self: center;
+}
+
+.logo {
+    left: 0;
+    top: 0;
+    max-width: 50px;
+    max-height: 50px;
+    /* width: 18%;
+    height: 18%; */
+    /* max-width: 200px; */
+    /* height: 15%; */
+}
+
+.btn-menu{
+    width: 50px;
+}
+
+div > a:hover {
+    /* background-color: ; */
+    border-bottom: solid 1px #1E4F20;
+    background-color: #E3FFE4;
+    color: #1E4F20;
+    /* bg-primary-color-opacity-80  */
+}
+
+div > a:active {
+    /* background-color: ; */
+    border-bottom: solid 1px #1E4F20 !important;
+    background-color: #E3FFE4 !important;
+    color: #1E4F20 !important;
+    /* bg-primary-color-opacity-80  */
+}
+
+div > .donate_btn:hover {
+    border-top: solid 1px #2C742F;
+    background-color: #E3FFE4;
+    color: #2C742F;
+}
+
+.donate_btn {
+    background-color: #2C742F;
+    color: #E3FFE4;
+    align-self: center;
+}
+
+.custom-navbar{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 576px) {
+    .navBtn {
+        padding: 1%;
+        max-width: fit-content;
+        align-self: center;
+    }
+
+    .logo {
+        left: 0;
+        /* width: 20%; */
+        max-width: 150px;
+        /* max-height: 42px;  */
+        /* max-height: 50px; */
+        /* height: 15%; */
+    }
+
+    img {
+        position: fixed;
+        z-index: 2;
+    }
+
+    .custom-navbar{
+        padding-left: 15%;
+        max-height: 50px;
+        min-height: 50px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    
+    .custom-navbar{
+        justify-content: left;
+    }
+
+    .donate_btn {
+        position: fixed;
+        /* top: 0.5%; */
+        right: 1%;
+        /* width: 20%; */
+        /* height: 7%; */
+    }
+
+    img {
+        position: fixed;
+        z-index: 2;
+    } 
+    
+    .nbgNavBar {
+        position: fixed;
+        top: 0px;
+        padding-left: 175px;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .donate_btn {
+        position: fixed;
+        /* top: 0.5%; */
+        right: 1%;
+        /* width: 8%; */
+        /* height: 3.5%; */
+    }
+
+    img {
+        position: fixed;
+        z-index: 2;
+    } 
+    
+    .nbgNavBar {
+        position: fixed;
+        top: 0px;
+        padding-left: 175px;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .donate_btn {
+        top: 1%;
+    }
+}

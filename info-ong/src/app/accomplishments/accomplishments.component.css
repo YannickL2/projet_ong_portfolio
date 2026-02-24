@@ -1,0 +1,58 @@
+a {
+    color:#1E4F20;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #2C742F;
+}
+
+div {
+    color: #1E4F20;
+}
+
+.accomplishments_div {
+    margin-top: 3%;
+} 
+
+@media (max-width: 576px) {
+    .card-body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 576px) {  
+    .date-title {
+        font-size: 85%;
+        font-weight: normal;
+    }
+    
+    .accomplishments_div {
+        left: 3%;
+        right: 3%;
+    } 
+
+    .img_div {
+        max-width: 130px;
+    }
+    
+}
+
+
+@media (min-width: 768px) { 
+    .date-title {
+        font-size: 85%;
+        font-weight: normal;
+    }
+    
+ }
+
+
+@media (min-width: 992px) {  }
+
+
+@media (min-width: 1200px) {  }
+
+
+@media (min-width: 1400px) {  }

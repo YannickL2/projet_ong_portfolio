@@ -1,0 +1,6 @@
+*/node_modules
+*/.angular
+*/.vscode
+*/.env
+*/dev_env
+*/.gitmodules

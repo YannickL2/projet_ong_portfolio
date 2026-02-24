@@ -1,0 +1,28 @@
+<div class="d-flex flex-column newsletters_div mx-1 mx-md-5">
+    <div class="d-flex flex-column flex-md-row newsletters_header justify-content-between">
+        <h2>Nos dernières nouvelles</h2>
+        <a class="nav-link py-3 text-decoration-underline" 
+        routerLink="/nouvelles" 
+        routerLinkActive="active" 
+        (click)="sendComponentToActivate()" clickable
+        >Voir toutes nos nouvelles
+        <i class="fa-solid fa-chevron-right"></i>
+    </a> 
+    </div>
+    <div class="card d-flex flex-column flex-sm-row card_div w-100 w-md-50">
+        <div class="d-flex align-items-center">
+            <img class="img-fluid w-100 m-1" src={{getArticle()!.image}}>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title text-justify">
+                <span class="date-title">{{creation_date?.toString()}}</span><br />
+                {{getArticle()!.title}}
+            </h5>
+            <div *ngIf="this.spinnerService.isWaiting()===true"
+            class="spinner-border text-success" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <p class="card-text text-justify"><a class="nav-link block stretched-link text-decoration-underline text-bold" (click)="sendActiveState();" >Lire: {{preview_content}}</a></p>
+        </div>
+    </div>
+</div>

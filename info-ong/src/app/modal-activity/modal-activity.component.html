@@ -1,0 +1,25 @@
+<div class="d-flex flex-column modal">
+    <div class="bg-primary-color-opacity-75 w-100 h-100"></div>
+    <div class="card w-100 w-sm-50  modal-card d-flex flex-column">
+        <div class="card-body">
+            <span class="card-title text-center d-block">
+                <div *ngIf="this.spinnerService.isWaiting()===true"
+                class="spinner-border text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <h2 class="w-100 my-0">{{modalTextDisplay.title}}</h2>
+            </span>
+            <span class="card-text d-flex flex-column flex-sm-row justif-content-between d-block">
+                <span class="d-none d-sm-flex img_div text-content mx-1 col-3 justify-content-center align-self-center justify-md-content-start">
+                    <img class="img-fluid" src={{modalTextDisplay.image}}>
+                </span>
+                <span class="mx-1 my-1 my-sm-0 d-flex modal-content">
+                    <p class="p-2 col-9 w-100 ">{{modalTextDisplay.content}}</p>
+                </span>
+            </span>
+            <div class="d-block d-flex m-1 justify-content-center btn_close  w-100">
+                <a class="nav-link block mx-2 modal-btn" (click)="this.modalService.setActiveStatus(false)" clickable>Fermer</a>
+            </div>
+        </div>
+    </div>
+

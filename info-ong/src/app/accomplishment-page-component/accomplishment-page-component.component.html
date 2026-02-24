@@ -1,0 +1,16 @@
+<div id="top" class="d-flex flex-column justify-content-center mx-md-5 text-primary-color" *ngIf="isThisComponentActive()">
+    <h1>Nos accomplissements</h1>
+    <section class="d-flex flex-column" *ngFor="let accomplishment of getAccomplishmentsDisplay()">
+        <h3 class="text-center">{{accomplishment.title}} - <span class="date_span">{{accomplishment.creation_date}}</span></h3>
+        <div class="d-flex flex-column flex-md-row">
+            <span class="m-1 img-span">
+                <img class="img_div img-fluid" src="{{accomplishment.image}}" >
+            </span>
+            <p class="m-1 text-center">
+                {{accomplishment.content}}
+            </p>
+        </div>
+    </section>
+</div>
+
+<!-- <router-outlet></router-outlet> -->

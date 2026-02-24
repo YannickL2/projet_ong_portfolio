@@ -1,0 +1,46 @@
+<nav id="top" class="navbar navbar-expand-md p-0 d-flex justify-content-end navbar-light bg-light">
+	<a routerLink="/" 
+	routerLinkActive="active"  
+	(click)="setActiveComponent('home'); this.setActiveTab('home') "
+	class="col-10">
+		<img src="../../assets/images/logo/logo_mini.png" class="img-fluid logo px-1 py-1 px-md-3 bg-secondary-color">
+	</a>
+	<button id="menu-btn" class="col-1 btn-menu navbar-toggler btn-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+	<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+		<div ngbNav #nav="ngbNav" class="custom-navbar ngbNav nbgNavBar w-100 nav-pills d-flex flex-column flex-md-row bg-primary-color-opacity-80 ">
+			<ng-container ngbNavItem="home">
+				<a routerLink="/" 
+				id="homeBtn"
+				class="btn navBtn navBtnHover text-secondary-color"
+				(click)="setActiveComponent('home'); this.collapseMenu(); 
+				this.setActiveTab('home');">
+					Accueil
+				</a>
+			</ng-container>
+			<ng-container ngbNavItem="newsletter">
+				<a routerLink="/nouvelles" 
+				id="newslettersBtn"
+				class="navBtn btn text-secondary-color"
+				(click)="setActiveComponent('newsletter'); 
+				this.setActiveTab('newsletter'); this.collapseMenu(); ">
+				Nouvelles
+			</a>
+			</ng-container>
+			<ng-container ngbNavItem="accomplishment">
+				<a routerLink="/accomplissements" 
+				id="accomplishmentsBtn"
+				class="navBtn btn text-secondary-color"
+				(click)="setActiveComponent('accomplishment'); 
+				this.setActiveTab('accomplishment'); this.collapseMenu() ">
+				Accomplissements</a>
+			</ng-container>
+			<ng-container ngbNavItem="donate">
+				<a href="#donate" class="navBtn btn py-1 donate_btn" >Donation</a>
+			</ng-container>
+		</div>
+	</div>
+	<div [ngbNavOutlet]="nav" class="m-0"></div>
+  </nav>

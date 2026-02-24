@@ -1,0 +1,55 @@
+.about_us_div {
+    margin-top: 3%;
+}
+
+@media (max-width: 576px) {
+    /* .about_us_div {
+        margin-left: 5%;
+        margin-right: 5%;
+    } */
+
+    .about_us_content {
+        align-self: center;
+        margin: 0;
+    }
+
+    .about_us_img {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .about_us_div {
+        height: 500px;
+        width: 100%;
+    }
+
+    .about_us_content {
+        height: 370px;
+        width: 500px;
+    }
+
+    .about_us_img_div {
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 50%;
+        height: 50%;
+    }
+    
+    .img-map {
+        max-height: 500px;
+        max-width: 500px;
+    }
+
+}
+
+
+@media (min-width: 992px) {}
+
+
+@media (min-width: 1200px) {}
+
+
+@media (min-width: 1400px) {}

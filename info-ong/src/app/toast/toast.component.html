@@ -1,0 +1,14 @@
+﻿<div *ngIf="showsToast" class="toast-class">  
+    <div style="max-width: 160px;">    
+      {{ toastMessage }}  
+    </div> 
+  
+    <!--button-->
+    <a
+      class="close-btn btn" 
+      (click)="showsToast = !showsToast">    
+      <small>      
+        Fermer    
+      </small>
+    </a>
+  </div>

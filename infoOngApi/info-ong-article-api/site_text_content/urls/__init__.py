@@ -1,0 +1,1 @@
+from .modal_text_content_url import urlpatterns

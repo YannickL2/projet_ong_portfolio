@@ -1,0 +1,10 @@
+<div *ngIf="isThisComponentActive()">
+    <!-- <div> -->
+    <app-newsletter (isModalActive)="setIsModalActive($event)"></app-newsletter>
+    <app-main-content></app-main-content>
+    <app-accomplishments (isModalActive)="setIsModalActive($event)"></app-accomplishments>
+    <app-about-us></app-about-us>
+    <div *ngIf="getIsModalActive()">
+        <app-modal (isModalActive)="setIsModalActive($event)"></app-modal>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div id="our_accomplishments_section" class="d-flex flex-column accomplishments_div mx-1 mx-md-5">
+    <div class="d-flex flex-column flex-md-row accomplishments_header justify-content-between">
+        <h2>Nos accomplissements</h2>
+        <a class="nav-link py-3 text-decoration-underline" 
+        routerLink="/accomplissements" 
+        routerLinkActive="active" 
+        (click)="sendComponentToActivate()" clickable>Voir tous nos accomplissements <i class="fa-solid fa-chevron-right"></i></a> 
+    </div>
+    <div class="card d-flex flex-column flex-sm-row card_div w-100 w-md-50">
+        <div class="d-flex align-items-center img_div">
+            <img class="img-fluid w-100 m-1" src={{latestAccomplishment?.image}}>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title text-justify">
+                <span class="date-title">{{creation_date}}</span><br />
+                {{latestAccomplishment?.title}}
+            </h5>
+            <div *ngIf="this.spinnerService.isWaiting()===true"
+            class="spinner-border text-success" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <p class="card-text text-justify text-decoration-underline"><a class="nav-link block stretched-link" (click)="sendActiveState()">Lire: {{preview_content}}</a> </p>
+        </div>
+    </div>
+</div>

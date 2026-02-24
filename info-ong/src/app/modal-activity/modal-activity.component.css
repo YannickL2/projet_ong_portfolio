@@ -1,0 +1,94 @@
+.modal {
+    z-index: 999;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.modal-content {
+    max-height: calc(100vh - 350px);
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+    
+a {
+    color:#1E4F20;;
+}
+
+a:hover {
+    color: #2C742F;
+}
+
+
+div {
+    color: #1E4F20;
+}
+
+.modal-btn {
+    padding: 10px;
+    background-color: #1E4F20;
+    color: #E3FFE4;
+    border-radius: 10px;
+}
+
+.modal-btn:hover {
+    background-color: #E3FFE4;
+    color: #1E4F20;
+}
+
+.btn_close {
+    z-index: 1001;
+}
+
+button{
+    z-index: 1001;
+}
+
+.date-title {
+    font-size: 50%;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.img_div {
+    width: 75%;
+    min-width: 150px;
+    max-width: 300px;
+    margin-left: 0;
+}
+
+@media (min-width: 576px) { 
+.modal-card {
+    background-color: rgba(255, 255, 255, 1) !important;
+    position: absolute;
+
+    top: 12%;
+    width: fit-content;
+} 
+
+.img_div {
+    width: 25%;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+}
+
+
+@media (min-width: 768px) { 
+    
+ }
+
+
+@media (min-width: 992px) {  }
+
+
+@media (min-width: 1200px) {  }
+
+
+@media (min-width: 1400px) {  }

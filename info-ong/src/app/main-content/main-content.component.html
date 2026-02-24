@@ -1,0 +1,40 @@
+<div id="our_actions_section" class="main_content mx-1 mx-md-5 d-flex flex-column">
+    <h2>Nos actions</h2>
+    <div class="row justify-content-md-between">
+        <div class="card justify-content-sm-center mx-md-2 col-md-3">
+            <div class="card-body rounded p-sm-2 d-flex justify-content-center mx-auto p-md-0">
+                <img class="card-img-top rounded flex-sm-shrink-1"
+                    src="../../assets/images/our_actions/countryside-woman-holding-fresh-fruits.jpg"
+                    alt="Card image cap">
+                <a  class="btn  btn-main-content btn-primary bg-primary-color-opacity-80 text-secondary-color" clickable
+                (click)="this.activateModal(true);this.modalService.setModalTitle('Communauté')"
+                >Communautaire</a>
+            </div>
+        </div>
+
+        <div class="card justify-content-sm-center mx-md-2 col-md-3">
+            <div class="card-body rounded p-sm-2 mx-auto d-flex justify-content-center p-md-0">
+                <img class="card-img-top rounded flex-sm-shrink-1"
+                    src="../../assets/images/our_actions/aerial-shot-scenery-beautiful-greenery-countryside.jpg"
+                    alt="Card image cap">
+                <a  class="btn stretched-link btn-main-content btn-primary bg-primary-color-opacity-80 text-secondary-color mx-auto" clickable
+                (click)="this.activateModal(true);this.modalService.setModalTitle('Biodiversité')"
+                >Biodiversité</a>
+            </div>
+        </div>
+
+        <div class="card justify-content-sm-center mx-md-2 col-md-3">
+            <div class="card-body rounded p-sm-2 mx-auto d-flex justify-content-center p-md-0">
+                <img class="card-img-top rounded flex-sm-shrink-1"
+                    src="../../assets/images/our_actions/beautiful-scenery-green-tree-forest-cloudy-sky.jpg"
+                    alt="Card image cap">
+                <a  class="btn stretched-link btn-main-content btn-primary bg-primary-color-opacity-80 text-secondary-color mx-auto" clickable
+                (click)="this.activateModal(true);this.modalService.setModalTitle('Reforestation')"
+                >Reforestation</a>
+            </div>
+        </div>
+        <div *ngIf="this.modalService.getActiveStatus()===true" >
+            <app-modal-activity></app-modal-activity>
+        </div>
+    </div>
+</div>
